@@ -24,7 +24,7 @@ class SwaggerServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/config/swagger.php' => config_path('swagger.php'),
             __DIR__ . '/assets/'            => public_path('swagger-ui/'),
-            __DIR__ . '/Api.php'            => app_path('Http/Controllers'),
+            __DIR__ . '/Api.php'            => app_path('Http/Controllers/Api.php'),
         ]);
     }
     /**
