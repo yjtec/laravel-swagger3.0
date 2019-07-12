@@ -78,4 +78,14 @@
  *   )
  *  )
  */
+/**
+ * @OA\Get(
+ *     path="/demo",
+ *     summary="demo",
+ *     @OA\Response(
+ *         response=200,
+ *         description="OK"
+ *     )
+ * )
+ */
 ?>
