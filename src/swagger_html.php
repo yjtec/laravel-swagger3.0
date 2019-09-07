@@ -1,5 +1,5 @@
 <?php  
-$path = $_GET['type']
+$path = isset($_GET['type']) ? $_GET['type'] : '';
 ?>
 <!-- HTML for static distribution bundle build -->
 <!DOCTYPE html>

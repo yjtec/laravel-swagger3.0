@@ -11,9 +11,8 @@ Route::get('/swagger/{type?}',function($type = ''){
     if(is_dir(app_path('Http/Requests'))){
         array_push($pathArr, app_path('Http/Requests'));
     }
-    if(is_dir(app_path('Http/Repositories'))){
-        array_push($pathArr, app_path('Http/Repositories'));
+    if(is_dir(app_path('Repositories'))){
+        array_push($pathArr, app_path('Repositories'));
     }    
-
     return app('swagger')->getJson($pathArr);
 });
